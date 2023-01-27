@@ -1,4 +1,5 @@
 let cont = document.getElementById("cont")
+let banana = document.getElementById("myImg2")
 
 setInterval(randomColour, 100)
 
@@ -8,4 +9,27 @@ function randomColour(){
 
 
     cont.style.backgroundColor = "#" + randColor;
+}
+
+doNextPoint();
+
+function doNextPoint(){
+
+    var maxX = $(window).width() - banana.width();    
+    var newX = rand(0, maxX);    
+    var maxY = ($(window).height()/2) - banana.height();
+    var newY = rand(0, maxY);
+    var speed  = rand (1000, 3000);
+
+    banana.animate({
+        'top': newY + 'px',
+        'left': newX + 'px' 
+    }, speed, function(){
+        doNextPoint();    
+    });
+}
+
+
+function rand (min, max) {
+     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
