@@ -15,9 +15,8 @@ function randomColour(){
 function bananaMove(){
 
         randplace = Math.floor(Math.random() * 99);
-    console.log("test")
-        banana.style.top(randplace+"%")
-        banana.style.left(randplace+"%")
+        banana.style.top = (randplace+"%")
+        banana.style.left = (randplace+"%")
 }
 
 
