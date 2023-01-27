@@ -8,15 +8,15 @@ let banana5 = document.getElementById("myImg6")
 
 setInterval(randomColour, 100)
 
-setInterval(banana1Move, 100)
+setInterval(banana1Move, 300)
 
-setInterval(banana2Move, 100)
+setInterval(banana2Move, 300)
 
-setInterval(banana3Move, 100)
+setInterval(banana3Move, 200)
 
-setInterval(banana4Move, 100)
+setInterval(banana4Move, 400)
 
-setInterval(banana5Move, 100)
+setInterval(banana5Move, 500)
 
 function randomColour(){
 
