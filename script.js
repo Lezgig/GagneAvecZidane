@@ -3,6 +3,8 @@ let banana = document.getElementById("myImg2")
 
 setInterval(randomColour, 100)
 
+setInterval(doNextPoint, 100)
+
 function randomColour(){
 
     randColor = Math.floor(Math.random() * 9999);
@@ -10,8 +12,6 @@ function randomColour(){
 
     cont.style.backgroundColor = "#" + randColor;
 }
-
-doNextPoint();
 
 function doNextPoint(){
 
