@@ -1,6 +1,6 @@
 let cont = document.getElementById("cont")
 
-setInterval(randomColour, 1000)
+setInterval(randomColour, 100)
 
 function randomColour(){
 
