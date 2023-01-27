@@ -16,15 +16,8 @@ function randomColour(){
 
         randplace = Math.floor(Math.random() * 99);
 
-        banana.animate([
-            
-            { transform: 'top:'+randplace },
-            { transform: 'right'+randplace }
-          ], {
-            // timing options
-            duration: 1000,
-            iterations: Infinity
-          });
+        banana.style.top(randplace+"%")
+        banana.style.left(randplace+"%")
     }
 
 
