@@ -1,4 +1,4 @@
-<div style="display: flex">
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
     <h1> Site de Eliot Gaillegue </h1>
 
     <?php echo "hello en php" ?>
