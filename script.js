@@ -13,10 +13,13 @@ function randomColour(){
     cont.style.backgroundColor = "#" + randColor;
 }
     function bananaMove(){
+
+        randplace = Math.floor(Math.random() * 99);
+
         banana.animate([
-            // keyframes
-            { transform: 'translateY(0px)' },
-            { transform: 'translateY(-300px)' }
+            
+            { transform: 'top:'+randplace },
+            { transform: 'right'+randplace }
           ], {
             // timing options
             duration: 1000,
