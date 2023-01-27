@@ -17,6 +17,8 @@ function bananaMove(){
         randplace = Math.floor(Math.random() * 99);
         banana.style.top = (randplace+"%")
         banana.style.left = (randplace+"%")
+        banana.style.bottom = (randplace+"%")
+        banana.style.right = (randplace+"%")
 }
 
 
