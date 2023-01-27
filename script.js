@@ -3,7 +3,7 @@ let banana = document.getElementById("myImg2")
 
 setInterval(randomColour, 100)
 
-setInterval(doNextPoint, 100)
+setInterval(bananaMove, 100)
 
 function randomColour(){
 
@@ -12,22 +12,18 @@ function randomColour(){
 
     cont.style.backgroundColor = "#" + randColor;
 }
+    function bananaMove(){
+        banana.animate([
+            // keyframes
+            { transform: 'translateY(0px)' },
+            { transform: 'translateY(-300px)' }
+          ], {
+            // timing options
+            duration: 1000,
+            iterations: Infinity
+          });
+    }
 
-function doNextPoint(){
-
-    var maxX = $(window).width() - banana.width();    
-    var newX = rand(0, maxX);    
-    var maxY = ($(window).height()/2) - banana.height();
-    var newY = rand(0, maxY);
-    var speed  = rand (1000, 3000);
-
-    banana.animate({
-        'top': newY + 'px',
-        'left': newX + 'px' 
-    }, speed, function(){
-        doNextPoint();    
-    });
-}
 
 
 function rand (min, max) {
