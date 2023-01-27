@@ -14,11 +14,15 @@ function randomColour(){
 }
 function bananaMove(){
 
-        randplace = Math.floor(Math.random() * 99);
-        banana.style.top = (randplace+"%")
-        banana.style.left = (randplace+"%")
-        banana.style.bottom = (randplace+"%")
-        banana.style.right = (randplace+"%")
+        randplace1 = Math.floor(Math.random() * 99);
+        randplace2 = Math.floor(Math.random() * 99);
+        randplace3 = Math.floor(Math.random() * 99);
+        randplace4 = Math.floor(Math.random() * 99);
+
+        banana.style.top = (randplace1+"%")
+        banana.style.left = (randplace2+"%")
+        banana.style.bottom = (randplace3+"%")
+        banana.style.right = (randplace4+"%")
 }
 
 
