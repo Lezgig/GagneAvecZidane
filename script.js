@@ -12,13 +12,13 @@ function randomColour(){
 
     cont.style.backgroundColor = "#" + randColor;
 }
-    function bananaMove(){
+function bananaMove(){
 
         randplace = Math.floor(Math.random() * 99);
-
+    console.log("test")
         banana.style.top(randplace+"%")
         banana.style.left(randplace+"%")
-    }
+}
 
 
 
