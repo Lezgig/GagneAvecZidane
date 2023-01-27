@@ -13,5 +13,5 @@ jobs:
       with:
         server: files.000webhost.com
         username: GagneAvecZidane
-        password: gagneAvecZidane
+        password: gagnezAvecZidane
         server-dir : public_html/
